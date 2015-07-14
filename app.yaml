@@ -1,0 +1,28 @@
+application: webkoom
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+  
+- url: /
+  script: main.php
+
+- url: /index\.html
+  script: main.php
+  
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /stylesheet
+  static_dir: stylesheet
+  
+- url: /javascript
+  static_dir: javascript
+
+- url: /image/(.*\.(gif|png|jpg))$
+  static_files: image/\1
+  upload: image/.*\.(gif|png|jpg)$
+  

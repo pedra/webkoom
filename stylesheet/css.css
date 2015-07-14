@@ -1,0 +1,106 @@
+/*-----layout-----*/
+* {
+    box-sizing: border-box;
+}
+html,body{
+	margin:0%;
+	height:100%;
+}
+body{
+	background-size: cover;
+	background-image: url("../image/spiral_1.png");/*,url("../image/spiral_2.png"),url("../image/spiral_3.png"),url("../image/spiral_4.png");*/
+	background-repeat: no-repeat;
+}
+#header{
+	height:auto;
+	min-height:20.9%;
+	background:rgba(255, 128, 0, 0.1);
+	padding:0.809%;
+	border:1px solid pink;
+	clear:both;
+}
+main{
+	margin-top:0.809%;
+	margin-bottom:0.809%;
+	height:auto;
+	min-height:62%;
+	float:left;
+	padding:0.809%;
+	min-width:100%;
+	border:1px solid orange;
+	background:rgba(255, 128, 0, 0.1);
+}
+footer{
+	height:auto;
+	min-height:14.5%;
+	padding:0.809%;
+	clear:both;
+	text-align:center;
+	border:1px solid orange;
+	background:rgba(255, 128, 0, 0.1);
+}
+nav{
+	padding:0.809%;
+	border:1px solid red;
+	background:rgba(255, 0, 0, 0.1);
+}
+article{
+	margin:0.809%;
+	margin-top:0%;
+	padding:0.809%;
+	float:left;
+	min-width:54%;
+	border:1px solid green;
+	background:rgba(0,255, 0, 0.1);
+}
+aside{
+	padding:0.809%;
+	float:left;
+	min-width:22%;
+	border:1px solid blue;
+	background:rgba(0,0,255, 0.1);
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+@media only screen and (max-width: 700px){
+	article{
+		min-width:76%;
+	}
+	.aside_right{
+		clear:left;
+		min-width:100%;
+	}
+}
+@media only screen and (max-width: 600px){
+	article{
+		min-width:73.5%;
+	}
+}
+@media only screen and (max-width: 500px){
+	aside{
+		clear:left;
+		min-width:100%;	
+	}
+	article{
+		margin-top:0.809%;
+		clear:left;
+		min-width:99%;
+    }
+}
+*{
+	border-radius:10px;
+}
+/*-----box-----*/
+table.box{
+	display:none;
+	position:absolute;
+	background:gainsboro;
+	border:1px solid silver;
+	border-collapse:collapse;
+}
+tr.box{
+	cursor:hand;
+	background:silver;
+}
