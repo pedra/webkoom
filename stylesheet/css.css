@@ -1,34 +1,59 @@
 /*-----layout-----*/
 * {
     box-sizing: border-box;
+	border-radius:5px;
 }
 html,body{
 	margin:0%;
 	height:100%;
 }
 body{
+}
+.fibonacci{
 	background-size: cover;
-	/*background-image: url("../image/spiral_1.png");,url("../image/spiral_2.png"),url("../image/spiral_3.png"),url("../image/spiral_4.png");*/
 	background-repeat: no-repeat;
+	background-image: url("../image/spiral_1.png");/*,url("../image/spiral_2.png"),url("../image/spiral_3.png"),url("../image/spiral_4.png"),url("../image/spiral_5.png"),url("../image/spiral_6.png"),url("../image/spiral_7.png"),url("../image/spiral_8.png");*/
+
+}
+#logo{
+	float:left;
+	margin:0.809%;
+	padding:0.404%;
+	border:1px solid #00FFFF;
+	background:rgba(0,255,255,0.1);
+}
+#nav_horizontal_top{
+	float:right;
+	clear:left;
+	margin-top:1.618%;;
+}
+#banner_top{
+	float:left;
+}
+#login{
+	float:right;
 }
 #header{
 	height:auto;
 	min-height:20.9%;
-	background:rgba(255, 128, 0, 0.1);
+	background:rgba(255,128,0,0.1);
 	padding:0.809%;
 	border:1px solid pink;
-	clear:both;
+}
+.main_header{
+	margin-top:1.618%;
+	border:1px solid pink;
+	background:rgba(255,128,0,0.1);
 }
 main{
 	margin-top:0.809%;
 	margin-bottom:0.809%;
 	height:auto;
 	min-height:62%;
-	float:left;
 	padding:0.809%;
 	min-width:100%;
 	border:1px solid orange;
-	background:rgba(255, 128, 0, 0.1);
+	background:rgba(255,128,0,0.1);
 }
 footer{
 	height:auto;
@@ -37,12 +62,27 @@ footer{
 	clear:both;
 	text-align:center;
 	border:1px solid orange;
-	background:rgba(255, 128, 0, 0.1);
+	background:rgba(255,128,0,0.1);
+}
+.main_footer{
+	margin-top:1.618%;
 }
 nav{
 	padding:0.809%;
 	border:1px solid red;
-	background:rgba(255, 0, 0, 0.1);
+	background:rgba(255,0,0,0.1);
+}
+section{
+	margin-top:0.809%;
+	padding:0.809%;
+	border:1px solid #FF00FF;
+	background:rgba(255,0,255,0.1);
+}
+.main_section{
+	margin-top:0.809%;
+	padding:0.809%;
+	border:1px solid #FF00FF;
+	background:rgba(255,0,255,0.1);
 }
 article{
 	margin:0.809%;
@@ -52,9 +92,9 @@ article{
 	float:left;
 	min-width:54%;
 	border:1px solid green;
-	background:rgba(0,255, 0, 0.1);
+	background:rgba(0,255,0,0.1);
 }
-#title{
+#main_title{
 	padding-left:1.618%;
 }
 aside{
@@ -62,13 +102,13 @@ aside{
 	float:left;
 	min-width:22%;
 	border:1px solid blue;
-	background:rgba(0,0,255, 0.1);
+	background:rgba(0,0,255,0.1);
 }
 img{
     max-width:100%;
     height: auto;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width:700px){
 	article{
 		min-width:76%;
 	}
@@ -77,12 +117,12 @@ img{
 		min-width:100%;
 	}
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width:600px){
 	article{
 		min-width:73.5%;
 	}
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width:500px){
 	aside{
 		clear:left;
 		min-width:100%;	
@@ -92,19 +132,24 @@ img{
 		clear:left;
 		min-width:99%;
     }
-}
-*{
-	border-radius:10px;
+	main{
+		min-height:73%;
+	}
+	#header{
+		min-height:10%;
+	}
+	.fibonacci{
+		background-image: url("../image/spiral_5.png");
+	}
 }
 /*-----box-----*/
 table.box{
 	display:none;
 	position:absolute;
 	background:gainsboro;
-	border:1px solid silver;
 	border-collapse:collapse;
 }
-tr.box{
+tr.box,th.box{
 	cursor:hand;
 	background:silver;
 }

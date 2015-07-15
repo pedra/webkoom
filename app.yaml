@@ -4,6 +4,8 @@ runtime: php55
 api_version: 1
 threadsafe: yes
 
+default_expiration: "7d"
+
 handlers:
   
 - url: /
@@ -18,11 +20,17 @@ handlers:
 
 - url: /stylesheet
   static_dir: stylesheet
+  http_headers:
+    Vary: Accept-Encoding
   
 - url: /javascript
   static_dir: javascript
+  http_headers:
+    Vary: Accept-Encoding
 
 - url: /image/(.*\.(gif|png|jpg))$
   static_files: image/\1
   upload: image/.*\.(gif|png|jpg)$
+  http_headers:
+    Vary: Accept-Encoding
   
