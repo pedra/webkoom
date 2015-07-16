@@ -15,6 +15,15 @@ body{
 	background-image: url("../image/spiral_1.png");/*,url("../image/spiral_2.png"),url("../image/spiral_3.png"),url("../image/spiral_4.png"),url("../image/spiral_5.png"),url("../image/spiral_6.png"),url("../image/spiral_7.png"),url("../image/spiral_8.png");*/
 
 }
+#header{
+	height:auto;
+	min-height:20.9%;
+	min-width:100%;
+	background:rgba(255,128,0,0.1);
+	padding:0.809%;
+	border:1px solid pink;
+	display:table;
+}
 #logo{
 	float:left;
 	margin:0.809%;
@@ -33,19 +42,13 @@ body{
 #login{
 	float:right;
 }
-#header{
-	height:auto;
-	min-height:20.9%;
-	background:rgba(255,128,0,0.1);
-	padding:0.809%;
-	border:1px solid pink;
-}
 .main_header{
 	margin-top:1.618%;
 	border:1px solid pink;
 	background:rgba(255,128,0,0.1);
 }
 main{
+	display:table;
 	margin-top:0.809%;
 	margin-bottom:0.809%;
 	height:auto;
@@ -56,6 +59,8 @@ main{
 	background:rgba(255,128,0,0.1);
 }
 footer{
+	display:table;
+	min-width:100%;
 	height:auto;
 	min-height:14.5%;
 	padding:0.809%;
@@ -133,10 +138,13 @@ img{
 		min-width:99%;
     }
 	main{
-		min-height:73%;
+		min-height:88%;
 	}
 	#header{
 		min-height:10%;
+	}
+	#footer{
+		display:none;
 	}
 	.fibonacci{
 		background-image: url("../image/spiral_5.png");

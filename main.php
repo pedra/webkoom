@@ -20,7 +20,7 @@
 			<figure id='logo' class='logo'>Logo</figure>
 			<section id='banner_top' class='banner_top'>
 				banner_top
-			</section>
+			</section>			
 			<section id='login' class='login'>
 				login
 			</section>
@@ -30,7 +30,7 @@
 		</header>
 		<main id='main' class='main'>
 			<aside id='aside_left' class='aside_left'>
-				aside_left
+				<!--aside_left-->
 				<nav id='nav_vertical_left' class='nav_vertical_left'>
 					nav_vertical_left
 				</nav>
@@ -48,7 +48,7 @@
 				<footer id='main_footer' class='main_footer' >main_footer</footer>
 			</article>
 			<aside id='aside_right' class='aside_right'>
-				aside_right
+				<!--aside_right-->
 				<nav id='nav_vertical_right' class='nav_vertical_right'>
 					nav_vertical_right
 				</nav>
