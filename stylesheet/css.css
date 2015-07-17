@@ -7,7 +7,9 @@ html,body{
 	margin:0%;
 	height:100%;
 }
-body{
+img{
+    max-width:100%;
+    height: auto;
 }
 .fibonacci{
 	background-size: cover;
@@ -16,66 +18,68 @@ body{
 
 }
 #header{
+	display:inline-block;
+	width:auto;
 	height:auto;
-	min-height:20.9%;
 	min-width:100%;
-	background:rgba(255,128,0,0.1);
+	min-height:20.9%;
 	padding:0.809%;
 	border:1px solid pink;
-	display:table;
+	background:rgba(255,128,0,0.1);
 }
 #logo{
 	float:left;
-	margin:0.809%;
+	margin:0%;
 	padding:0.404%;
 	border:1px solid #00FFFF;
 	background:rgba(0,255,255,0.1);
 }
-#nav_horizontal_top{
-	float:right;
-	clear:left;
-	margin-top:1.618%;;
-}
 #banner_top{
 	float:left;
+	margin-left:1.618%;
 }
-#login{
+#nav_top{
 	float:right;
 }
-.main_header{
+#nav_top a{
+	color:red;
+}
+#login{
+	margin-top:1.618%;
+	float:right;
+	clear:both;
+}
+main{
+	display:inline-block;
+	width:auto;
+	height:auto;
+	min-width:100%;
+	min-height:57.5%;
+	margin-top:0.809%;
+	margin-bottom:0.809%;
+	padding:0.809%;
+	border:1px solid orange;
+	background:rgba(255,128,0,0.1);
+}
+#main_header{
 	margin-top:1.618%;
 	border:1px solid pink;
 	background:rgba(255,128,0,0.1);
 }
-main{
-	display:table;
-	margin-top:0.809%;
-	margin-bottom:0.809%;
-	height:auto;
-	min-height:62%;
+aside{
 	padding:0.809%;
-	min-width:100%;
-	border:1px solid orange;
-	background:rgba(255,128,0,0.1);
-}
-footer{
-	display:table;
-	min-width:100%;
-	height:auto;
-	min-height:14.5%;
-	padding:0.809%;
-	clear:both;
-	text-align:center;
-	border:1px solid orange;
-	background:rgba(255,128,0,0.1);
-}
-.main_footer{
-	margin-top:1.618%;
+	float:left;
+	min-width:22%;
+	border:1px solid blue;
+	background:rgba(0,0,255,0.1);
 }
 nav{
 	padding:0.809%;
 	border:1px solid red;
 	background:rgba(255,0,0,0.1);
+}
+#nav_left a,#nav_right a{
+	display:block;
 }
 section{
 	margin-top:0.809%;
@@ -83,7 +87,7 @@ section{
 	border:1px solid #FF00FF;
 	background:rgba(255,0,255,0.1);
 }
-.main_section{
+div{
 	margin-top:0.809%;
 	padding:0.809%;
 	border:1px solid #FF00FF;
@@ -99,27 +103,58 @@ article{
 	border:1px solid green;
 	background:rgba(0,255,0,0.1);
 }
-#main_title{
-	padding-left:1.618%;
-}
-aside{
+#content{
+	margin-top:0.809%;
 	padding:0.809%;
-	float:left;
-	min-width:22%;
-	border:1px solid blue;
-	background:rgba(0,0,255,0.1);
+	border:1px solid #FF00FF;
+	background:rgba(255,0,255,0.1);
 }
-img{
-    max-width:100%;
-    height: auto;
+#main_footer{
+	margin-top:1.618%;
+}
+footer{
+	display:inline-block;
+	min-width:100%;
+	height:auto;
+	min-height:19.1%;
+	padding:0.809%;
+	clear:both;
+	text-align:center;
+	border:1px solid orange;
+	background:rgba(255,128,0,0.1);
+}
+#banner_bottom{
+	margin:0;
+}
+#nav_bottom, #organization{
+	margin-top:0.809%;
+}
+#organization{
+	font-size:80.9%;
+	padding:0.404%;
+}
+.name::after,.tel::after,.email::after,.country_name::after{
+    content: " - ";
+}
+.street_address::after,.locality::after,.region::after{
+    content: ", ";
 }
 @media only screen and (max-width:700px){
 	article{
 		min-width:76%;
 	}
-	.aside_right{
+	#aside_right{
 		clear:left;
 		min-width:100%;
+	}
+	#nav_right{
+		text-align:center;
+	}
+	#nav_right a{
+		display:inline;
+	}
+	#banner_top{
+		display:none;
 	}
 }
 @media only screen and (max-width:600px){
@@ -143,8 +178,14 @@ img{
 	#header{
 		min-height:10%;
 	}
-	#footer{
+	#footer,#aside_right,#login{
 		display:none;
+	}
+	#nav_left{
+		text-align:center;
+	}
+	#nav_left a{
+		display:inline;
 	}
 	.fibonacci{
 		background-image: url("../image/spiral_5.png");
