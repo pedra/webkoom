@@ -24,15 +24,19 @@ img{
 	min-width:100%;
 	min-height:20.9%;
 	padding:0.809%;
-	border:1px solid pink;
-	background:rgba(255,128,0,0.1);
+	border:1px dotted silver;
+	background:rgba(128,128,128,0.1);
 }
-#logo{
+figure{
 	float:left;
 	margin:0%;
-	padding:0.404%;
-	border:1px solid #00FFFF;
-	background:rgba(0,255,255,0.1);
+	padding:0%;
+	/*border:1px solid #00FFFF;
+	background:rgba(0,255,255,0.1);*/
+}
+#logo{
+	max-width:100%;
+	height:auto;
 }
 #banner_top{
 	float:left;
@@ -47,19 +51,19 @@ img{
 #login{
 	margin-top:1.618%;
 	float:right;
-	clear:both;
+	clear:right;
 }
 main{
 	display:inline-block;
 	width:auto;
 	height:auto;
 	min-width:100%;
-	min-height:57.5%;
+	min-height:55%;
 	margin-top:0.809%;
 	margin-bottom:0.809%;
 	padding:0.809%;
-	border:1px solid orange;
-	background:rgba(255,128,0,0.1);
+	border:1px dotted silver;
+	background:rgba(128,128,128,0.1);
 }
 #main_header{
 	margin-top:1.618%;
@@ -120,8 +124,8 @@ footer{
 	padding:0.809%;
 	clear:both;
 	text-align:center;
-	border:1px solid orange;
-	background:rgba(255,128,0,0.1);
+	border:1px dotted silver;
+	background:rgba(128,128,128,0.1);
 }
 #banner_bottom{
 	margin:0;
@@ -177,6 +181,12 @@ footer{
 	}
 	#header{
 		min-height:10%;
+	}
+	#logo{
+		max-width:40%;
+	}
+	#nav_top{
+		float:right;
 	}
 	#footer,#aside_right,#login{
 		display:none;

@@ -19,7 +19,9 @@
 		<!--header-->
 		<header id='header' class='header'>
 			<!--logo-->
-			<figure id='logo' class='logo'>Logo</figure>
+			<figure id='figure' itemscope itemtype='http://www.webkoom.com/Organization'>
+				<img id='logo' class='logo' src='image/logo.png' alt='WebKoom' title='WebKoom' width='119' itemprop="logo">
+			</figure>
 			<!--banner_top-->
 			<div id='banner_top' class='banner_top'>
 				banner_top
@@ -61,7 +63,8 @@
 				<!--main_section-->
 				<div id='content' class='content'>
 					<input type=button onclick='See("commum1",1,1,1)' value='see box'>
-					<input type=button onclick='See("commum2",1,1,1)' value='see box'>					
+					<input type=button onclick='See("commum2",1,1,1)' value='see box'>
+					<p>You can drag the box across the screen if you desire.</p>					
 				</div>
 				<!--main_footer-->
 				<footer id='main_footer' class='main_footer' >main_footer</footer>
