@@ -54,7 +54,7 @@ nav{
 	padding-bottom:27px;
 }
 div.nav_top{
-	height:25px;
+	max-height:25px;
 	background:rgba(220,220,220,1);
 	border:1px solid silver;
 	float:right;
@@ -64,17 +64,18 @@ div.nav_top{
 	position:relative;
 	z-index:10;
 }
+div.nav_top:hover{
+	overflow:visible;
+	max-height:100%;
+}
 figure.nav_top{
 	float:right;
+	display:block;
 }
 img.nav_top{
 	display:none;
 	margin-top:5px;
-	margin-bottom:5px;
-}
-div.nav_top:hover{
-	overflow:visible;
-	height: 100%;
+	margin-bottom:5px;	
 }
 a.nav_top{
 	text-align:center;
@@ -230,8 +231,7 @@ footer{
 	#nav_top:hover{
 		max-width:100%;
 		min-width:50%;
-		max-height:10%;
-		min-height:10%;
+		max-height:40px;
 		overflow:visible;
 	}
 	img.nav_top{
