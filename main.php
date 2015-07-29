@@ -11,8 +11,8 @@
 		<meta name='description' content='Content management system'>
 		<meta name='keywords' content='content,management,system'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<script type='text/javascript' src='javascript/js.js'></script>
 		<link rel='stylesheet' href='stylesheet/css.css'>
+		<script type='text/javascript' src='javascript/js.js'></script>
 	</head>
 	<body class='fibonacci'>
 		<!--header-->
@@ -75,33 +75,33 @@
 					<div class='nav_left'>
 						<a href='#' class='nav_left'>Menu 1</a><br>
 						<span class='sub_left'>
-							<a href='#' class='sub_left'>sub_left 1</a><br>
-							<a href='#' class='sub_left'>sub_left 2</a><br>
-							<a href='#' class='sub_left'>sub_left 3</a><br>
+							<a href='#' class='sub_left'>sub_left 1<br></a>
+							<a href='#' class='sub_left'>sub_left 2<br></a>
+							<a href='#' class='sub_left'>sub_left 3<br></a>
 						</span>
 					</div>
 					<div class='nav_left'>
 						<a href='#' class='nav_left'>Menu 2</a><br>
 						<span class='sub_left'>
-							<a href='#' class='sub_left'>sub_left 1</a><br>
-							<a href='#' class='sub_left'>sub_left 2</a><br>
-							<a href='#' class='sub_left'>sub_left 3</a><br>
+							<a href='#' class='sub_left'>sub_left 1<br></a>
+							<a href='#' class='sub_left'>sub_left 2<br></a>
+							<a href='#' class='sub_left'>sub_left 3<br></a>
 						</span>
 					</div>
 					<div class='nav_left'>
 						<a href='#' class='nav_left'>Menu 3</a><br>
 						<span class='sub_left'>
-							<a href='#' class='sub_left'>sub_left 1</a><br>
-							<a href='#' class='sub_left'>sub_left 2</a><br>
-							<a href='#' class='sub_left'>sub_left 3</a><br>
+							<a href='#' class='sub_left'>sub_left 1<br></a>
+							<a href='#' class='sub_left'>sub_left 2<br></a>
+							<a href='#' class='sub_left'>sub_left 3<br></a>
 						</span>
 					</div>
 					<div class='nav_left'>
 						<a href='#' class='nav_left'>Menu 4</a><br>
 						<span class='sub_left'>
-							<a href='#' class='sub_left'>sub_left 1</a><br>
-							<a href='#' class='sub_left'>sub_left 2</a><br>
-							<a href='#' class='sub_left'>sub_left 3</a><br>
+							<a href='#' class='sub_left'>sub_left 1<br></a>
+							<a href='#' class='sub_left'>sub_left 2<br></a>
+							<a href='#' class='sub_left'>sub_left 3<br></a>
 						</span>
 					</div>
 				</nav>
@@ -129,10 +129,38 @@
 			<aside id='aside_right' class='aside_right'>
 				<!--nav_right-->
 				<nav id='nav_right' class='nav_right'>
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Clients</a>
-					<a href="#">Contact Us</a>
+					<div class='nav_right'>
+						<a href='#' class='nav_right'>Menu 1</a><br>
+						<span class='sub_right'>
+							<a href='#' class='sub_right'>sub_right 1<br></a>
+							<a href='#' class='sub_right'>sub_right 2<br></a>
+							<a href='#' class='sub_right'>sub_right 3<br></a>
+						</span>
+					</div>
+					<div class='nav_right'>
+						<a href='#' class='nav_right'>Menu 2</a><br>
+						<span class='sub_right'>
+							<a href='#' class='sub_right'>sub_right 1<br></a>
+							<a href='#' class='sub_right'>sub_right 2<br></a>
+							<a href='#' class='sub_right'>sub_right 3<br></a>
+						</span>
+					</div>
+					<div class='nav_right'>
+						<a href='#' class='nav_right'>Menu 3</a><br>
+						<span class='sub_right'>
+							<a href='#' class='sub_right'>sub_right 1<br></a>
+							<a href='#' class='sub_right'>sub_right 2<br></a>
+							<a href='#' class='sub_right'>sub_right 3<br></a>
+						</span>
+					</div>
+					<div class='nav_right'>
+						<a href='#' class='nav_right'>Menu 4</a><br>
+						<span class='sub_right'>
+							<a href='#' class='sub_right'>sub_right 1<br></a>
+							<a href='#' class='sub_right'>sub_right 2<br></a>
+							<a href='#' class='sub_right'>sub_right 3<br></a>
+						</span>
+					</div>
 				</nav>
 				<!--banner_right-->
 				<div id='banner_right' class='banner_right'>

@@ -13,13 +13,12 @@ handlers:
 
 - url: /index\.html
   script: main.php
-  
-- url: /tempo\.php
-  script: tempo.php  
-  
+ 
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  http_headers:
+    Vary: Accept-Encoding
 
 - url: /stylesheet
   static_dir: stylesheet
