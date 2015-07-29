@@ -68,14 +68,8 @@ div.nav_top:hover{
 	overflow:visible;
 	max-height:100%;
 }
-figure.nav_top{
-	float:right;
-	display:block;
-}
-img.nav_top{
+input.nav_top{
 	display:none;
-	margin-top:5px;
-	margin-bottom:5px;	
 }
 a.nav_top{
 	text-align:center;
@@ -85,6 +79,27 @@ a.nav_top{
 	border:1px solid dimgray;
 }
 span.sub_top{
+}
+div.nav_left{
+	max-height:25px;
+	background:rgba(220,220,220,1);
+	border:1px solid silver;
+	margin:0.202%;
+	padding:0.404%;
+	overflow:hidden;
+	position:relative;
+	z-index:10;
+}
+div.nav_left:hover{
+	overflow:visible;
+	max-height:100%;
+}
+a.nav_left{
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	background:whitesmoke;
+	border:1px solid dimgray;
 }
 #login{
 	margin-top:1.618%;
@@ -186,6 +201,12 @@ footer{
 		clear:left;
 		min-width:100%;
 	}
+	#nav_top{
+		min-width:70%;
+	}
+	input.nav_top{
+		display:none;
+	}
 	#nav_right{
 		text-align:center;
 	}
@@ -199,6 +220,9 @@ footer{
 @media only screen and (max-width:600px){
 	article{
 		min-width:73.5%;
+	}	
+	input.nav_top{
+		display:none;
 	}
 }
 @media only screen and (max-width:500px){
@@ -234,11 +258,22 @@ footer{
 		max-height:40px;
 		overflow:visible;
 	}
-	img.nav_top{
-		display:block;		
+	input.nav_top{
+		display:inline;
+		margin:3px;
 	}
 	div.nav_top{
 		clear:both;
+	}
+	#nav_left, #aside_left{
+		max-height:35px;
+		display:block;
+	}
+	div.nav_left{
+		float:left;
+	}
+	#banner_left{
+		display:none;
 	}
 	#footer,#aside_right,#login{
 		display:none;

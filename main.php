@@ -1,7 +1,7 @@
 <?PHP
 ?>
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' itemscope itemtype='http://www.webkoom.com/WebPage'>
 	<head>
 		<title>WebKoom</title>
 		<meta charset='UTF-8'>
@@ -27,9 +27,7 @@
 			</div>
 			<!--nav_horizontal_top-->
 			<nav id='nav_top' class='nav_top'>
-				<figure class='nav_top'>
-					<img class='nav_top' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFNJREFUeNpiTEtPC2BgYJgPxAIM9AUfgDiQaYAsZ4DauZ5pgCyHO4IJGhQDBT6AHJA4QI4ApwGGUTDQgHG0HBgtB0bLgdFyYLQcGC0HBrocAAgwAC0YHHVXpm0bAAAAAElFTkSuQmCC' alt='menu'>
-				</figure>
+				<input type='button' class='nav_top' value='='>
 				<div class='nav_top'>
 					<a href='#' class='nav_top'>Menu 1</a><br>
 					<span class='sub_top'>
@@ -69,15 +67,43 @@
 			</div>
 		</header>
 		<!--main-->
-		<main id='main' class='main'>
+		<main id='main' class='main' itemprop='mainContentOfPage'>
 			<!--aside_left-->
 			<aside id='aside_left' class='aside_left'>
 				<!--nav_vertical_left-->
 				<nav id='nav_left' class='nav_left'>
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Clients</a>
-					<a href="#">Contact Us</a>
+					<div class='nav_left'>
+						<a href='#' class='nav_left'>Menu 1</a><br>
+						<span class='sub_left'>
+							<a href='#' class='sub_left'>sub_left 1</a><br>
+							<a href='#' class='sub_left'>sub_left 2</a><br>
+							<a href='#' class='sub_left'>sub_left 3</a><br>
+						</span>
+					</div>
+					<div class='nav_left'>
+						<a href='#' class='nav_left'>Menu 2</a><br>
+						<span class='sub_left'>
+							<a href='#' class='sub_left'>sub_left 1</a><br>
+							<a href='#' class='sub_left'>sub_left 2</a><br>
+							<a href='#' class='sub_left'>sub_left 3</a><br>
+						</span>
+					</div>
+					<div class='nav_left'>
+						<a href='#' class='nav_left'>Menu 3</a><br>
+						<span class='sub_left'>
+							<a href='#' class='sub_left'>sub_left 1</a><br>
+							<a href='#' class='sub_left'>sub_left 2</a><br>
+							<a href='#' class='sub_left'>sub_left 3</a><br>
+						</span>
+					</div>
+					<div class='nav_left'>
+						<a href='#' class='nav_left'>Menu 4</a><br>
+						<span class='sub_left'>
+							<a href='#' class='sub_left'>sub_left 1</a><br>
+							<a href='#' class='sub_left'>sub_left 2</a><br>
+							<a href='#' class='sub_left'>sub_left 3</a><br>
+						</span>
+					</div>
 				</nav>
 				<!--banner_left-->
 				<div id='banner_left' class='banner_left'>

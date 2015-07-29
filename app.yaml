@@ -14,8 +14,8 @@ handlers:
 - url: /index\.html
   script: main.php
   
-- url: /menu\.html
-  script: menu.html  
+- url: /tempo\.php
+  script: tempo.php  
   
 - url: /favicon\.ico
   static_files: favicon.ico
